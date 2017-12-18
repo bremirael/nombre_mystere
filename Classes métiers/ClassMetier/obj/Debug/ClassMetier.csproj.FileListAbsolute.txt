@@ -1,0 +1,7 @@
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\obj\Debug\ClassMetier.csproj.CoreCompileInputs.cache
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\bin\Debug\ClassMetier.dll
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\bin\Debug\ClassMetier.pdb
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\bin\Debug\MySql.Data.dll
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\bin\Debug\MySql.Data.xml
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\obj\Debug\ClassMetier.dll
+D:\IUT\C#\Projet\nombreMystere\ClassMetier\obj\Debug\ClassMetier.pdb

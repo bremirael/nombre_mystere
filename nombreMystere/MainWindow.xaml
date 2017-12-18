@@ -1,0 +1,40 @@
+﻿
+    <Window x:Class="nombreMystere.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nombreMystere"
+        mc:Ignorable="d"
+        Title="Jeu du Nombre Mystère" Height="350" Width="660">
+    <Grid>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="_Fichier">
+                <MenuItem Header="_quitter" Click="Quitter_Appli">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Gestion Joueur">
+                <MenuItem Header="_Nouveau Joueur" Click="Nouveau_Joueur">
+                </MenuItem>
+                <MenuItem x:Name="Visualiser_Joueur" Header="_Visualiser Joueur" Click="Visu_Joueur">
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="_Gestion Partie">
+                <MenuItem Header="_Nouvelle Partie" Click="Nouvelle_Partie">
+                </MenuItem>
+                <MenuItem Header="_Visualiser les scores" Click="Visu_Score">
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <DataGrid x:Name="DataPartie" Visibility="Hidden" HorizontalAlignment="Left" Height="267" VerticalAlignment="Top" Width="660" Margin="10,42,0,0"  ItemsSource="{Binding Path=LoadDataBinding}"
+ CanUserResizeRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Path=nom}" Header="Nom du Joueur" Width="165" IsReadOnly="True" />
+
+                <DataGridTextColumn Binding="{Binding Path=partie_jouees}" Header="Partie Jouées" Width="165" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=score}" Header="Meilleur Score" Width="165" IsReadOnly="True" />
+                <DataGridTextColumn Binding="{Binding Path=nb_coups}" Header="Meilleur Nombre de Coups" Width="165" IsReadOnly="True" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
