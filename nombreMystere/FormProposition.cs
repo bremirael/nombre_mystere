@@ -67,7 +67,6 @@ namespace nombreMystere
                     int meilleurNbCoups = 0;
                     int meilleurScore = 0;
                     meilleurNbCoups = p.SelectNbCoups(this.id);
-                    System.Windows.MessageBox.Show(meilleurNbCoups.ToString());
 
                     if (this.nbCoups > meilleurNbCoups)
                     {

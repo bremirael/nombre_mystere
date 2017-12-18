@@ -37,8 +37,6 @@ namespace nombreMystere
           
             long id = cmd.LastInsertedId;
 
-            MessageBox.Show(id.ToString());
-
             bdd.CloseConnection();
             
                 string query2 = "INSERT INTO nombre_mystere.partie(partie_jouees, score, nb_coups, id_joueur) " +

@@ -22,13 +22,9 @@ namespace nombreMystere
         public VisuJoueur()
         {
             InitializeComponent();
-            Console.WriteLine("GLOOOOOOOOOOOOOOOOOOOOOOOOOO");
             List<Joueur> joueurs = new List<Joueur>();
-            Console.WriteLine("tontonnnnnnnnn");
             ListJoueur list = new ListJoueur();
-            Console.WriteLine("GLuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu");
             joueurs = list.RecupListJoueur();
-            Console.WriteLine("Glaaaaaaaaaaaaaaaaaaaaa");
             DataJoueur.ItemsSource = joueurs;
         }
     }
